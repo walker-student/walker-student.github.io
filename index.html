@@ -1,12 +1,6 @@
-<h1>SURVEY</h1>
-
-<form action="submit-to-google-sheets">
-  <input name="Email" type="email" placeholder="Email" required>
-  <input name="Name" type="text" placeholder="Name" required>
-  <button type="submit">Send</button>
-</form>
-
-
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxvcalqAd3PPmMWDnI9U4Y-7mBCM654KasGmnAPGlmHysrLb4N1S78YrLsXuIOEh5w4tw/exec'
     const form = document.forms['submit-to-google-sheet']
@@ -18,3 +12,14 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+
+<h1>SURVEY!</h1>
+
+<form action="submit-to-google-sheets">
+  <input name="Email" type="email" placeholder="Email" required>
+  <input name="Name" type="text" placeholder="Name" required>
+  <button type="submit">Send</button>
+</form>
+
+
