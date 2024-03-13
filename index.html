@@ -1,12 +1,44 @@
-<h1>Survey Test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Entry</title>
+</head>
 
-<form 
-  method="POST" 
-  action="https://script.google.com/macros/s/AKfycbxvcalqAd3PPmMWDnI9U4Y-7mBCM654KasGmnAPGlmHysrLb4N1S78YrLsXuIOEh5w4tw/exec"
->
-  <input name="Email" type="email" placeholder="Email" required>
-  <input name="Name" type="text" placeholder="Name" required>
-  <button type="submit">Send</button>
-</form>
+<body>
+
+  <div class="container">
+    <h1>Order Entry</h1>
+    <form 
+      method="POST" 
+      action="https://script.google.com/macros/s/AKfycbxvcalqAd3PPmMWDnI9U4Y-7mBCM654KasGmnAPGlmHysrLb4N1S78YrLsXuIOEh5w4tw/exec"
+    >
+    <p></p>
+    <label for="orderId">Order ID:</label>
+    <input type="text" id="orderId" name="orderId" required>
+
+    <label for="customerName">Customer Name:</label>
+    <input type="text" id="customerName" name="customerName" required>
+
+    <label for="customerEmail">Customer Email:</label>
+    <input type="text" id="customerEmail" name="customerEmail" required>
+
+    <fieldset>
+        <legend>Order Item:</legend>
+        <label><input type="radio" name="order" value="coffee" required> Coffee</label><br>
+        <label><input type="radio" name="order" value="tea"> Tea</label><br>
+        <label><input type="radio" name="order" value="bagel"> Bagel</label><br>
+        <label><input type="radio" name="order" value="breakfast_sandwich"> Breakfast Sandwich</label><br>
+    </fieldset>
+
+    <!-- Add additional fields here -->
+
+    <button type="submit">Submit</button>
+    </form>
+  </div>
+    
+
+</body>
 
 
