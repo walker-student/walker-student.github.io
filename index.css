@@ -1,0 +1,65 @@
+body {
+    background-color: #f0f0f0; /* Background color for the body */
+    font-family: Arial, sans-serif; /* Default font family */
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff; /* Background color for the container */
+}
+
+h1 {
+    text-align: center;
+    background-color: #8c1d40;
+    color: #ffffff; /* Header color matching Arizona State University */
+    margin-bottom: 20px; /* Add some bottom margin to the header */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+fieldset {
+    border: none; /* Remove the fieldset border */
+}
+
+legend {
+    font-weight: bold; /* Make the legend text bold */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #8c1d40; /* Button background color matching Arizona State University */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #6a1328; /* Darker shade on hover */
+}
+
+#dateTimeToday {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
