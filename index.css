@@ -62,4 +62,34 @@ button[type="submit"]:hover {
     align-items: center;
     justify-content: center;
 
+
+.controls {
+    width: 294px;
+    margin: 15px auto;
+}
+
+.add {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.remove {
+    float: right;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.controls button i{
+    margin-left: 5px;
+}
+
+.remove:hover, .add:hover{
+    background: #2691d9;
+    color: #e9f4fb;
+    transition: .5s;
+}
 }
