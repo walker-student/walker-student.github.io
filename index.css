@@ -62,3 +62,13 @@ button[type="submit"]:hover {
     align-items: center;
     justify-content: center;
 }
+
+/* Dynamic Field Styling */
+
+.input_fields_wrap{
+max-width: 350px;
+}
+.input_fields_wrap input[type=text]{
+ width:100%;
+ margin:2px 0;
+}
