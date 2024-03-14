@@ -21,7 +21,6 @@
     <p></p>
 
     <label for="category">Food or Drink?</label>
-    <label for="category">Select Category:</label>
     <select id="category" name="category">
         <option value="drink">Drink</option>
         <option value="food">Food</option>
@@ -31,7 +30,14 @@
         <label for="drinkName">Drink Name:</label>
         <input type="text" id="drinkName" name="drinkName"><br><br>
         <label for="size">Size:</label>
-        <input type="text" id="size" name="size"><br><br>
+        <select id="size" name="size">
+          <option value="short">Short</option>
+          <option value="tall">Tall</option>
+          <option value="grande">Grande</option>
+          <option value="venti">Venti</option>
+          <option value="trenta">Trenta</option>
+        </select>
+  
     </div>
     <div id="foodFields" style="display:none;">
         <label for="foodName">Food Name:</label>
@@ -46,13 +52,6 @@
     <label for="customerEmail">Customer Email:</label>
     <input type="text" id="customerEmail" name="customerEmail" required>
 
-    <fieldset>
-        <legend>Order Item:</legend>
-        <label><input type="radio" name="order" value="coffee" required> Coffee</label><br>
-        <label><input type="radio" name="order" value="tea"> Tea</label><br>
-        <label><input type="radio" name="order" value="bagel"> Bagel</label><br>
-        <label><input type="radio" name="order" value="breakfast_sandwich"> Breakfast Sandwich</label><br>
-    </fieldset>
 
     <!-- Add additional fields here -->
 
