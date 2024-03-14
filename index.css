@@ -62,4 +62,12 @@ button[type="submit"]:hover {
     align-items: center;
     justify-content: center;
 
+
+/* Dynamic Field Styling */
+
+#rowAdder {
+    margin-left: 17px;
+    
+}
+
 }
