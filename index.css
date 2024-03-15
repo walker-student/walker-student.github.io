@@ -33,6 +33,10 @@ input[type="email"] {
     border-radius: 3px;
 }
 
+form {
+    background-color: #006241;
+}
+
 
 
 fieldset {
