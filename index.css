@@ -72,3 +72,30 @@ select{
     padding: 10px;
     border-radius: 4px;
 }
+
+/* Rating Sytling */
+
+.rating {
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating label:before {
+    content: "\2022";
+    color: lightgray;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.rating input[type="radio"]:checked + label:before {
+    color: lightgreen;
+}
