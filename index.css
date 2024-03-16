@@ -73,31 +73,4 @@ select{
     border-radius: 4px;
 }
 
-/* Rating Sytling */
 
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-input {
-    visibility: hidden;
-}
-
-label.radio {
-    cursor: pointer;
-    display: inline-block;
-    line-height: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: gray;
-}
-
-input:checked + label {
-    color: lightgreen;
-}
