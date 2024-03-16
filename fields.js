@@ -9,6 +9,8 @@ document.getElementById('category').addEventListener('change', function() {
         document.getElementById('foodFields').style.display = 'block';
         document.getElementById('drinkName').value = '';
         document.getElementById('size').value = '';
+        document.getElementById('milk').value = '';
+        document.getElementById('flavoring').value = '';
     }
 });
 
