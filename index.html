@@ -8,9 +8,17 @@
     <script src="date_time.js" defer></script>
     <script src="fields.js" defer></script>
     <script src="sheets.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--ORDERID SCRIPT-->
+    <script>
+      //Function to set the orderID before form submission
+      function setOrderID() {
+        var orderIDInput = document.getElementById("orderID");
+        var orderID = math.floor(Math.random()*100);
+        orderIDInput.value = orderID;
+      }
     </script>
+    
 </head>
 
 <body>
