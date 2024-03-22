@@ -9,18 +9,6 @@
     <script src="fields.js" defer></script>
     <script src="sheets.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!--ORDERID SCRIPT-->
-    <script>
-      //Function to set the orderID before form submission
-      function setOrderID() {
-        alert("setOrderID function called");
-        var orderIDInput = document.getElementById("orderID");
-        var orderID = Math.floor(Math.random() * 10000);
-        console.log("orderID: ", orderID);
-        orderIDInput.value = orderID;
-        
-      }
-    </script>
     
 </head>
 
@@ -33,7 +21,6 @@
       method="POST" 
       action="https://script.google.com/macros/s/AKfycbxvcalqAd3PPmMWDnI9U4Y-7mBCM654KasGmnAPGlmHysrLb4N1S78YrLsXuIOEh5w4tw/exec"
       name="EasyCritic"
-      onsubmit="setOrderID()"
     >
 
     <input type="hidden" id="orderID" name="orderID">
