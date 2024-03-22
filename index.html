@@ -13,10 +13,12 @@
     <script>
       //Function to set the orderID before form submission
       function setOrderID() {
+        alert("setOrderID function called");
         var orderIDInput = document.getElementById("orderID");
-        var orderID = math.floor(Math.random()*100);
-        orderIDInput.value = orderID;
+        var orderID = Math.floor(Math.random() * 10000);
         console.log("orderID: ", orderID);
+        orderIDInput.value = orderID;
+        
       }
     </script>
     
