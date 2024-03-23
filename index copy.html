@@ -1,12 +1,15 @@
-<!--WORKING COPY-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Entry</title>
     <link rel="stylesheet" href="index.css">
+    <title>Order Entry</title>
     <script src="date_time.js" defer></script>
+    <script src="fields.js" defer></script>
+    <script src="sheets.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
 </head>
 
 <body>
@@ -17,29 +20,117 @@
     <form 
       method="POST" 
       action="https://script.google.com/macros/s/AKfycbxvcalqAd3PPmMWDnI9U4Y-7mBCM654KasGmnAPGlmHysrLb4N1S78YrLsXuIOEh5w4tw/exec"
+      name="EasyCritic"
     >
-    <p></p>
-    <label for="orderId">Order ID:</label>
-    <input type="text" id="orderId" name="orderId" required>
 
     <label for="customerName">Customer Name:</label>
     <input type="text" id="customerName" name="customerName" required>
 
     <label for="customerEmail">Customer Email:</label>
-    <input type="text" id="customerEmail" name="customerEmail" required>
+    <input type="email" id="customerEmail" name="customerEmail" required>  
 
-    <fieldset>
-        <legend>Order Item:</legend>
-        <label><input type="radio" name="order" value="coffee" required> Coffee</label><br>
-        <label><input type="radio" name="order" value="tea"> Tea</label><br>
-        <label><input type="radio" name="order" value="bagel"> Bagel</label><br>
-        <label><input type="radio" name="order" value="breakfast_sandwich"> Breakfast Sandwich</label><br>
-    </fieldset>
+    <br> 
+    <!--Order Data Submission goes here-->
+    <label for="category">What did you order?</label>
+    <select id="category" name="category">
+        <option value="drink">Drink</option>
+        <option value="food">Food</option>
+    </select>
+    <br><br>
+    <div id="drinkFields">
+        <label for="drinkName">What Drink Did You Order?</label>
+        <select id="drinkName" name="drinkName">
+          <option value="Medium Roast">Medium Roast Coffee</option>
+          <option value="Blonde Roast">Blonde Roast Coffee</option>
+          <option value="Dark Roast">Dark Roast Coffee</option>
+          <option value="Latte">Latte</option>
+          <option value="Flat White">Flat White</option>
+          <option value="Brown Sugar Shaken Espresso">Brown Sugar Shaken Espresso</option>
+          <option value="Cold Brew">Cold Brew</option>
+          <option value="Nitro Cold Brew">Nitro Cold Brew</option>
+          <option value="Strawberry Acai">Strawberry Acai Refresher</option>
+          <option value="Pink Drink">Pink Drink</option>
+        </select>
+        <br><br>
+        <label for="size">What Size did you order?</label>
+        <select id="size" name="size">
+          <option value=""></option>
+          <option value="Short">Short</option>
+          <option value="Tall">Tall</option>
+          <option value="Grande">Grande</option>
+          <option value="Venti">Venti</option>
+          <option value="Trenta">Trenta</option>
+        </select>
+        <br><br>
+        <b>Did you make any modifications?</b>
+        <br><br>
+        <label for="milk">Milk</label>
+        <select id="milk" name="milk">
+          <option selected="selected" value="">Standard</option>
+          <option value="Half & Half">Cream</option>
+          <option value="2%">2% Milk</option>
+          <option value="Whole">Whole Milk</option>
+          <option value="Oat">Oat Milk</option>
+        </select>
+        <br><br>
+        <label for="flavoring">Flavoring</label>
+        <select id="flavoring" name="flavoring">
+          <option selected="selected" value="">No added flavors</option>
+          <option value="Vanilla">Vanilla</option>
+          <option value="Classic">Classic</option>
+          <option value="Sugar Packets">Sugar Packets</option>
+        </select>
+        <br><br>
+        
+  
+    </div>
+    <div id="foodFields" style="display:none;">
+        <label for="foodName">Food Name:</label>
+        <select id="foodName" name="foodName">
+          <option value="Plain Bagel">Plain Bagel</option>
+          <option value="Everything Bagel">Everything Bagel</option>
+          <option value="Chocolate Croissant">Chocalate Croissant</option>
+          <option value="Bacon Gouda Sandwich">Bacon Gouda Sandwich</option>
+        </select>
+        <br><br>
+    </div>
+    <b>Tell us how we did.</b>
+        <label for="accuracy">How satisfied were you with the accuracy of your order?</label>
+        <select id="accuracy" name="accuracy">
+          <option selected="selected" value="">Rate out of 5</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br><br>
 
-    <!-- Add additional fields here -->
+        <label for="taste">Did the taste meet your expectations?</label>
+        <select id="taste" name="taste">
+          <option selected="selected" value="">Rate out of 5</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br><br>
 
+        <label for="presentation">Did the presentation match what you were expecting?</label>
+        <select id="presentation" name="presentation">
+          <option selected="selected" value="">Rate out of 5</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br><br>
+  
     <button type="submit">Submit</button>
     </form>
+
   </div>
     
 
