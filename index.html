@@ -31,6 +31,69 @@
 
     <br> 
     <!--Order Data Submission goes here-->
+    <label for="category">What did you order?</label>
+    <select id="category" name="category">
+        <option value="drink">Drink</option>
+        <option value="food">Food</option>
+    </select>
+    <br><br>
+    <div id="drinkFields">
+        <label for="drinkName">What Drink Did You Order?</label>
+        <select id="drinkName" name="drinkName">
+          <option value="Medium Roast">Medium Roast Coffee</option>
+          <option value="Blonde Roast">Blonde Roast Coffee</option>
+          <option value="Dark Roast">Dark Roast Coffee</option>
+          <option value="Latte">Latte</option>
+          <option value="Flat White">Flat White</option>
+          <option value="Brown Sugar Shaken Espresso">Brown Sugar Shaken Espresso</option>
+          <option value="Cold Brew">Cold Brew</option>
+          <option value="Nitro Cold Brew">Nitro Cold Brew</option>
+          <option value="Strawberry Acai">Strawberry Acai Refresher</option>
+          <option value="Pink Drink">Pink Drink</option>
+        </select>
+        <br><br>
+        <label for="size">What Size did you order?</label>
+        <select id="size" name="size">
+          <option value=""></option>
+          <option value="Short">Short</option>
+          <option value="Tall">Tall</option>
+          <option value="Grande">Grande</option>
+          <option value="Venti">Venti</option>
+          <option value="Trenta">Trenta</option>
+        </select>
+        <br><br>
+        <b>Did you make any modifications?</b>
+        <br><br>
+        <label for="milk">Milk</label>
+        <select id="milk" name="milk">
+          <option selected="selected" value="">Standard</option>
+          <option value="Half & Half">Cream</option>
+          <option value="2%">2% Milk</option>
+          <option value="Whole">Whole Milk</option>
+          <option value="Oat">Oat Milk</option>
+        </select>
+        <br><br>
+        <label for="flavoring">Flavoring</label>
+        <select id="flavoring" name="flavoring">
+          <option selected="selected" value="">No added flavors</option>
+          <option value="Vanilla">Vanilla</option>
+          <option value="Classic">Classic</option>
+          <option value="Sugar Packets">Sugar Packets</option>
+        </select>
+        <br><br>
+        
+  
+    </div>
+    <div id="foodFields" style="display:none;">
+        <label for="foodName">Food Name:</label>
+        <select id="foodName" name="foodName">
+          <option value="Plain Bagel">Plain Bagel</option>
+          <option value="Everything Bagel">Everything Bagel</option>
+          <option value="Chocolate Croissant">Chocalate Croissant</option>
+          <option value="Bacon Gouda Sandwich">Bacon Gouda Sandwich</option>
+        </select>
+        <br><br>
+    </div>
     <b>Tell us how we did.</b>
         <label for="accuracy">How satisfied were you with the accuracy of your order?</label>
         <select id="accuracy" name="accuracy">
