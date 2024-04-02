@@ -9,6 +9,28 @@
     <script src="fields.js" defer></script>
     <script src="sheets.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      const form = document.querySelector("#form")
+      const submitButton = document.querySelector("#submit")
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz9LTkCJvmLq1w5PRiS87hL7mJIwqwA4DiVro1zeZlx2lG_O08q-Ys0PjQd0KYCFywk/exec'
+   
+      form.addEventListener('submit', e => {
+        submitButton.disabled = true
+        e.preventDefault()
+        let requestBody = new FormData(form)
+        fetch(scriptURL, { method: 'POST', body: requestBody})
+          .then(response => {
+             alert('Success!', response)
+             submitButton.disabled = false
+            })
+          .catch(error => {
+          alert('Error!', error.message)
+            submitButton.disabled = false
+   
+          }
+          )
+      })
+   </script>
     
 </head>
 
@@ -19,7 +41,7 @@
     <div id="dateTimeToday">""<br /></div>
     <form 
       method="POST" 
-      action="https://api.sheetmonkey.io/form/38YEqQYWPg9CJG7csH7cec"
+      action="https://script.google.com/macros/s/AKfycbz9LTkCJvmLq1w5PRiS87hL7mJIwqwA4DiVro1zeZlx2lG_O08q-Ys0PjQd0KYCFywk/exec"
       name="EasyCritic"
     >
 
