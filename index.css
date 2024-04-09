@@ -23,6 +23,7 @@ label {
     display: block;
     margin-bottom: 5px;
     max-width:fit-content;
+    padding: 10px
 }
 
 input {
