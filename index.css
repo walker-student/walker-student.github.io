@@ -2,7 +2,7 @@ body {
     background-color: #006241; /* Background color for the body */
     font-family: Arial, sans-serif; /* Default font family */
     background-image: url("beans.jpg");
-    background-size: auto;
+    background-size: cover;
 }
 
 .container {
