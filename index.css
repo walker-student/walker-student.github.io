@@ -1,6 +1,7 @@
 body {
     background-color: #006241; /* Background color for the body */
     font-family: Arial, sans-serif; /* Default font family */
+    background-image: url("beans.jpg");
 }
 
 .container {
@@ -26,17 +27,13 @@ label {
 }
 
 input {
-    width: 95%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 4px;
 }
 
-div {
-    margin-right: 10px;
-    padding: 10px;
-}
 
 
 
